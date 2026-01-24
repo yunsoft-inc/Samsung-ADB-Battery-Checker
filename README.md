@@ -19,12 +19,6 @@ This tool reads data on demand when the user presses the button, and shows both 
 ### Manual Calculation Result
 ![Manual Calculation](assets/screenshot_manual.png)
 
-> Place the uploaded screenshots in the `/assets` folder with the names:
-> - `screenshot_main.png`
-> - `screenshot_manual.png`
-> - `screenshot_adb_error.png`
-> - `screenshot_input_error.png`
-
 ---
 
 ## 🔧 Requirements
