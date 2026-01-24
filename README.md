@@ -1,0 +1,1 @@
+# Samsung-ADB-Battery-Checker
