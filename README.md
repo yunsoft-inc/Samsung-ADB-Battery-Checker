@@ -2,12 +2,12 @@
 
 <p align="center">
   <!-- App Icon -->
-  <img src="assets/icon.png" width="120" alt="App Icon">
+  <img src="img.icon" width="120" alt="App Icon">
 </p>
 
 **Samsung ADB Battery Checker** is a Windows GUI application written in Python that uses **Android ADB** to read and display **hidden internal battery information** from Samsung Galaxy devices.
 
-This tool reads data **on demand (not real-time)** when the user presses the button, and shows both interpreted values and raw system data from ADB.
+This tool reads data on demand when the user presses the button, and shows both interpreted values and raw system data from ADB.
 
 ---
 
@@ -18,12 +18,6 @@ This tool reads data **on demand (not real-time)** when the user presses the but
 
 ### Manual Calculation Result
 ![Manual Calculation](assets/screenshot_manual.png)
-
-### ADB Not Installed Error
-![ADB Error](assets/screenshot_adb_error.png)
-
-### Invalid Input Error
-![Input Error](assets/screenshot_input_error.png)
 
 > Place the uploaded screenshots in the `/assets` folder with the names:
 > - `screenshot_main.png`
@@ -74,7 +68,7 @@ If ADB is not installed or cannot be found, the program will display an error me
 | **LLB CURRENT** | Current battery calibration reference |
 | **LLB DIFF** | Weeks since last calibration |
 | **ASOC** | Actual State of Charge (estimated health %) |
-| **BSOC** | Battery State of Charge |
+| **BSOH** | Battery State of Health |
 | **BATTERY CYCLE** | Total battery charge cycles |
 
 ---
@@ -105,17 +99,6 @@ The program will estimate battery health.
 
 This project is open source and may be modified and used freely for **non-commercial purposes**.
 
-If you find bugs or want to improve the tool:
-- Fork this repository
-- Apply your changes
-- Submit a **Pull Request**
-
 ---
-
-## 📜 License
-
-This project is licensed under a **Non-Commercial Open Source License**.
-
-Commercial use is **not permitted** without explicit permission from the author.
 
 
