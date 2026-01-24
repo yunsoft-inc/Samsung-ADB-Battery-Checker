@@ -2,7 +2,7 @@
 
 <p align="center">
   <!-- App Icon -->
-  <img src="img.icon" width="120" alt="App Icon">
+  <img src="img.ico" width="120" alt="App Icon">
 </p>
 
 **Samsung ADB Battery Checker** is a Windows GUI application written in Python that uses **Android ADB** to read and display **hidden internal battery information** from Samsung Galaxy devices.
