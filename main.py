@@ -420,7 +420,7 @@ class Samsung_Battery_Tool ( wx.Frame ):
 
         D13 = wx.BoxSizer( wx.HORIZONTAL )
 
-        self.name111 = wx.StaticText( self, wx.ID_ANY, _(u"BSOC : "), wx.DefaultPosition, wx.Size( 250,-1 ), wx.ALIGN_RIGHT )
+        self.name111 = wx.StaticText( self, wx.ID_ANY, _(u"BSOH : "), wx.DefaultPosition, wx.Size( 250,-1 ), wx.ALIGN_RIGHT )
         self.name111.Wrap( -1 )
 
         self.name111.SetFont( wx.Font( 13, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
@@ -431,10 +431,10 @@ class Samsung_Battery_Tool ( wx.Frame ):
 
         bSizer1911 = wx.BoxSizer( wx.HORIZONTAL )
 
-        self.bsoc_text = wx.TextCtrl( self, wx.ID_ANY, _(u"0"), wx.DefaultPosition, wx.Size( 150,-1 ), wx.TE_RIGHT )
-        self.bsoc_text.SetFont( wx.Font( 13, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
+        self.bsoh_text = wx.TextCtrl( self, wx.ID_ANY, _(u"0"), wx.DefaultPosition, wx.Size( 150,-1 ), wx.TE_RIGHT )
+        self.bsoh_text.SetFont( wx.Font( 13, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
 
-        bSizer1911.Add( self.bsoc_text, 0, wx.ALIGN_CENTER, 5 )
+        bSizer1911.Add( self.bsoh_text, 0, wx.ALIGN_CENTER, 5 )
 
         self.unit111 = wx.StaticText( self, wx.ID_ANY, _(u"%"), wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
         self.unit111.Wrap( -1 )
@@ -446,9 +446,9 @@ class Samsung_Battery_Tool ( wx.Frame ):
 
         bSizer1811.Add( bSizer1911, 1, wx.EXPAND, 5 )
 
-        self.bsoc_gauge = wx.Gauge( self, wx.ID_ANY, 100, wx.DefaultPosition, wx.Size( 140,20 ), wx.GA_HORIZONTAL )
-        self.bsoc_gauge.SetValue( 0 )
-        bSizer1811.Add( self.bsoc_gauge, 0, wx.ALIGN_LEFT|wx.ALL, 5 )
+        self.bsoh_gauge = wx.Gauge( self, wx.ID_ANY, 100, wx.DefaultPosition, wx.Size( 140,20 ), wx.GA_HORIZONTAL )
+        self.bsoh_gauge.SetValue( 0 )
+        bSizer1811.Add( self.bsoh_gauge, 0, wx.ALIGN_LEFT|wx.ALL, 5 )
 
 
         D13.Add( bSizer1811, 1, wx.ALIGN_CENTER, 5 )
@@ -586,8 +586,8 @@ class Samsung_Battery_Tool ( wx.Frame ):
             self.llbdiff_text.SetLabelText(str(output[10]))
             self.asoc_text.SetLabelText(str(output[11]))
             self.asoc_gauge.SetValue(output[11])
-            self.bsoc_text.SetLabelText(str(output[12]))
-            self.bsoc_gauge.SetValue(output[12])
+            self.bsoh_text.SetLabelText(str(output[12]))
+            self.bsoh_gauge.SetValue(output[12])
             self.usage_text.SetLabelText(str(output[13]))
             self.raw_text.SetLabelText(str(raw))
             
