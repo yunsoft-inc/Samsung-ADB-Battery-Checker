@@ -14,10 +14,10 @@ This tool reads data on demand when the user presses the button, and shows both 
 ## 📸 Screenshots
 
 ### Main Window
-![Main UI](assets/screenshot_main.png)
+![Main UI](assets/main.png)
 
 ### Manual Calculation Result
-![Manual Calculation](assets/screenshot_manual.png)
+![Manual Calculation](assets/manual.png)
 
 ---
 
