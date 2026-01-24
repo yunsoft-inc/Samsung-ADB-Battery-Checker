@@ -89,10 +89,4 @@ The program will estimate battery health.
 
 ---
 
-## 🔓 Open Source
-
-This project is open source and may be modified and used freely for **non-commercial purposes**.
-
----
-
 
