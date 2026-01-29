@@ -11,7 +11,7 @@ This tool reads data on demand when the user presses the button, and shows both 
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Main Window
 ![Main UI](assets/main.png)
@@ -21,7 +21,7 @@ This tool reads data on demand when the user presses the button, and shows both 
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 1. **Android ADB must be installed**
 2. ADB must be added to the **Windows PATH environment variable**
@@ -32,7 +32,7 @@ If ADB is not installed or cannot be found, the program will display an error me
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. Install **ADB** and add it to the system PATH  
 2. Connect your Samsung Galaxy phone via USB  
@@ -42,11 +42,11 @@ If ADB is not installed or cannot be found, the program will display an error me
 6. Select the desired device  
 7. Click **Receive Data From Device**
 
-⚠️ If you press **Receive Data From Device** without selecting a device, an error will appear.
+If you press **Receive Data From Device** without selecting a device, an error will appear.
 
 ---
 
-## 📊 Field Descriptions
+## Field Descriptions
 
 | Field | Description |
 |------|-------------|
@@ -67,7 +67,7 @@ If ADB is not installed or cannot be found, the program will display an error me
 
 ---
 
-## 📑 Raw DATA Panel
+## Raw DATA Panel
 
 The **Raw DATA** section shows the original values directly received from ADB shell commands.
 
@@ -76,7 +76,7 @@ If a value is not supported by your device, it will be displayed as: -1
 
 ---
 
-## 🔢 Manual Battery Health Calculation
+## Manual Battery Health Calculation
 
 1. Enter your phone’s **Typical Battery Capacity (mAh)**  
 2. Click **Manual Calculation**
