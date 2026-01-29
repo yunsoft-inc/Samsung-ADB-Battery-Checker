@@ -77,7 +77,7 @@ def parse_battery_log(text):
 class Samsung_Battery_Tool ( wx.Frame ):
 
     def __init__( self, parent ):
-        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = _(u"Samsung Battery Tool By Yunsoft V2.0"), pos = wx.DefaultPosition, size = wx.Size( 800,800 ), style = wx.DEFAULT_FRAME_STYLE & ~(wx.RESIZE_BORDER | wx.MAXIMIZE_BOX) | wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = _(u"Samsung Battery Tool By Yunsoft V3.0"), pos = wx.DefaultPosition, size = wx.Size( 800,800 ), style = wx.DEFAULT_FRAME_STYLE & ~(wx.RESIZE_BORDER | wx.MAXIMIZE_BOX) | wx.TAB_TRAVERSAL )
 
         #self.SetIcon(wx.Icon('img.ico', wx.BITMAP_TYPE_ICO))
         self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
@@ -588,7 +588,7 @@ class Samsung_Battery_Tool ( wx.Frame ):
             self.asoc_gauge.SetValue(output[11])
             self.bsoh_text.SetLabelText(str(output[12]))
             self.bsoh_gauge.SetValue(output[12])
-            self.usage_text.SetLabelText(str(output[13]))
+            self.usage_text.SetLabelText(str(output[13] / 100))
             self.raw_text.SetLabelText(str(raw))
             
     def CalManualy( self, event ):
